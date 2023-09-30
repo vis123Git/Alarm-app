@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1d1d23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 20px;
+  color: white;
+  background-color: #1d1d23;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 40%;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.timer-tab,
+.timer-tab2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #34344a;
+  border-radius: 5px;
+  padding: 30px 10px;
+  margin-top: 20px;
+}
+
+.set-time p {
+  margin-right: 10px;
+}
+
+.timer input {
+  color: white;
+  width: 40px;
+  font-size: 16px;
+  margin-right: 5px;
+  text-align: center;
+  margin-inline: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+}
+
+input:focus {
+  outline: none;
+}
+
+.set-time-button .set {
+  background-color: #f0f757;
+  color: black;
+  border-radius: 15px;
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.set-time-button .stop {
+  background-color: #f0f757;
+  color: black;
+  border-radius: 15px;
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.set-time-button .set:hover,
+.stop:hover {
+  background-color: yellow;
+}
+
+.current-timers {
+  margin-top: 20px;
+}
+
+.current-timers button {
+  background-color: #39393e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 50px;
+  font-size: 18px;
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error-message {
+  color: red;
+  margin-top: 20px;
+}
+
+.current-timers > p {
+  color: white;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .timer-tab,
+  .timer-tab2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .timer input {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
